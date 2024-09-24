@@ -1,4 +1,4 @@
-![Screenshot (83)](https://github.com/user-attachments/assets/10f8e6b1-4928-4aa6-9081-73ecd087dfd8)# ChatWiz AI
+# ChatWiz AI
 
 Demo Link: https://heartfelt-hummingbird-229c45.netlify.app/
 
