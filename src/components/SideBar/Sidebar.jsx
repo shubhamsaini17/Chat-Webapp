@@ -8,27 +8,26 @@ const Sidebar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      // Check screen width and set visibility accordingly
-      if (window.innerWidth > 768) { // Adjust width as needed for your breakpoint
-        setIsVisible(true); // Always show on larger screens
+     
+      if (window.innerWidth > 768) { 
+        setIsVisible(true); 
       } else {
-        setIsVisible(isMenuOpen); // Only show if menu is open on mobile
+        setIsVisible(isMenuOpen);
       }
     };
 
     handleResize();
 
-    // for resizing
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [isMenuOpen]);
 
   useEffect(() => {
     if (isMenuOpen) {
-      setIsVisible(true); // Show sidebar when opening
+      setIsVisible(true);
     } else {
-      // Delay hiding to match the closing animation
-      const timer = setTimeout(() => setIsVisible(false), 300); // Match the closing duration
+      
+      const timer = setTimeout(() => setIsVisible(false), 300); 
       return () => clearTimeout(timer); 
     }
   }, [isMenuOpen]);

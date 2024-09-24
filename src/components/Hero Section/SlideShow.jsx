@@ -1,16 +1,16 @@
-import { data } from "./SlideData"; // Ensure this path is correct
+import { data } from "./SlideData"; 
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
 const SlideShow = () => {
 
   const slideLeft = () => {
     const slider = document.getElementById('slide');
-    slider.scrollLeft -= 300; // Adjust scroll amount if necessary
+    slider.scrollLeft -= 300; 
   }
 
   const slideRight = () => {
     const slider = document.getElementById('slide');
-    slider.scrollLeft += 300; // Adjust scroll amount if necessary
+    slider.scrollLeft += 300; 
   }
 
   return (

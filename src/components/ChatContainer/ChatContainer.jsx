@@ -220,5 +220,4 @@ const ChatComponent = () => {
     </div>
   );
 };
-
 export default ChatComponent;
