@@ -11,8 +11,8 @@ const ChatComponent = () => {
   const [image, setImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [showCards, setShowCards] = useState(true);
-  const [showGreeting, setShowGreeting] = useState(true); // State to track greeting visibility
-  const isMenuOpen = useSelector((store) => store.app.isMenuOpen); // Get sidebar state
+  const [showGreeting, setShowGreeting] = useState(true); 
+  const isMenuOpen = useSelector((store) => store.app.isMenuOpen); 
 
   const predefinedResponses = {
     hi: "Hello! How can I assist you today?",
@@ -40,10 +40,10 @@ const ChatComponent = () => {
       setIsLoading(true);
       setInputValue("");
       setImage(null);
-      setShowCards(false); // Hide the cards
-      setShowGreeting(false); // Hide the greeting
+      setShowCards(false); 
+      setShowGreeting(false); 
 
-      // Simulate bot response delay
+ 
       setTimeout(() => {
         let botResponse;
 
@@ -64,7 +64,7 @@ const ChatComponent = () => {
 
         setMessages((prev) => [...prev, botMessage]);
         setIsLoading(false);
-      }, 1500); // 1 second delay
+      }, 1500); 
     }
   };
 
@@ -93,12 +93,12 @@ const ChatComponent = () => {
         <h1 className="text-white text-xl md:text-2xl font-bold mb-2">
           ChatWhiz AI
         </h1>
-        {showGreeting && ( // Conditional rendering of the greeting
+        {showGreeting && ( 
           <h2 className="text-gray-300 text-lg mb-4">
             How can I help you today?
           </h2>
         )}
-        {showCards && ( // Conditional rendering of the cards
+        {showCards && ( 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
             <div className="w-[80%] md:w-full p-2 md:p-4 bg-gray-700 rounded-lg hover:scale-105 transition duration-300">
               <p className="text-white">
@@ -190,7 +190,7 @@ const ChatComponent = () => {
               type="file"
               accept="image/*"
               onChange={handleImageChange}
-              className="hidden" // Hide the default file input
+              className="hidden" 
             />
             <button
               type="button"
@@ -207,7 +207,7 @@ const ChatComponent = () => {
             value={inputValue}
             onChange={handleInputChange}
             placeholder="Type a message..."
-            className="flex-grow p-1 md:p-2 border border-gray-300 rounded-lg dark:text-black min-w-[150px]" // Added min-w-[150px] to prevent shrinking
+            className="flex-grow p-1 md:p-2 border border-gray-300 rounded-lg dark:text-black min-w-[150px]" 
           />
           <button
             type="submit"
