@@ -77,7 +77,7 @@ export default function Footer() {
                 <div className="flex flex-col-rev sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm md:text-sm text-gray-500 sm:text-center">
                         © 
-                        <a href="https://github.com/" className="hover:underline">
+                        <a href="#" className="hover:underline">
                         ChatWhiz AI 
                         </a>
                         .  All Rights Reserved.

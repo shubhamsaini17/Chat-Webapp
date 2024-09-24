@@ -27,7 +27,7 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <div className="flex items-center px-6 md:px-0">
             <h1
-              className="text-md md:text-xl  cursor-pointer mr-4 pl-20 md:pl-0 ml-12 md:ml-0"
+              className="text-md md:text-xl cursor-pointer mr-4 pl-20 md:pl-0 ml-12 md:ml-0"
               onClick={toggleMenuHandler}
               style={{ marginLeft: "-6rem" }}
             >
@@ -36,7 +36,7 @@ export default function Header() {
             <Link to="/" className="flex items-center">
               <img
                 src="https://i.postimg.cc/XNrhV3g6/removedark.png"
-                className="h-3.5 md:h-6"
+                className="h-4 md:h-6"
                 alt="Logo"
               />
             </Link>
@@ -46,11 +46,11 @@ export default function Header() {
               onClick={() => dispatch(toggleDarkMode())}
               className="text-gray-800 bg-gray-100 ring-1 hover:bg-gray-400 focus:ring-2 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 lg:px-4 py-1 lg:py-1 mr-2 focus:outline-none"
             >
-              {isDarkMode ? <Sun /> : <Moon />}
+              {isDarkMode ? <Sun/> : <Moon />}
             </button>
             <Link
               to="#"
-              className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5"
+              className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-md px-2 lg:px-5 py-1 md:py-1 lg:py-2"
             >
               Log In
             </Link>
@@ -68,9 +68,9 @@ export default function Header() {
                                         ${
                                           isActive
                                             ? "text-orange-700"
-                                            : "text-gray-700"
+                                            : "text-gray-500"
                                         } 
-                                        border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        border-b border-gray-100 hover:bg-gray-50 hover:scale-95 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   Home
@@ -84,9 +84,9 @@ export default function Header() {
                                         ${
                                           isActive
                                             ? "text-orange-700"
-                                            : "text-gray-700"
+                                            : "text-gray-500"
                                         } 
-                                        border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        border-b border-gray-100 hover:bg-gray-50 hover:scale-95 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   About
@@ -100,9 +100,9 @@ export default function Header() {
                                         ${
                                           isActive
                                             ? "text-orange-700"
-                                            : "text-gray-700"
+                                            : "text-gray-500"
                                         } 
-                                        border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        border-b border-gray-100 hover:bg-gray-50 hover:scale-95 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   Contact
